@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix South Africa | </title>
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'netflixapp/style.css' %}">
+    <!--Script for icons-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body class="bg-black text-gray-100">
+    <nav class="flex justify-between items-center py-3 px-4 fixed w-full z-50">
+        <div class="w-6/12">
+            <img src="{% static 'netflixapp/netflix.png' %}" alt="logo" class="w-5/12 md:w-2/12">
+        </div>
+
+        <div>
+            <a href="login.html" class='bg-primary_red py-1 px-3 text-white md:text-lg rounded-md'>
+                Sign In 
+            </a>
+        </div>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+    <footer class=" px-5 py-10 ">
+        <ul class="flex justify-between items-center">
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Investor Relations</li>
+            <li>Jobs</li>
+            <li>Ways to Watch</li>
+            <li>Terms of Use</li>
+            <li>Corporate Information</li>
+            <li>Contact Us</li>
+            <li>Only on Netflix</li>
+            <li>&copy; All Right Reserved | 2022</li>
+            <li> Netflix Clone</li>
+            <li>Created by George Hlongwane aka George Best</li>
+        </ul>
+    </footer>
+</body>
+</html>
